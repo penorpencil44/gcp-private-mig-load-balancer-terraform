@@ -1,9 +1,9 @@
 # https://developer.hashicorp.com/terraform/language/values/outputs
 
-output "instance_external_ip" {
-  value       = "http://${google_compute_instance.sample-vm.network_interface[0].access_config[0].nat_ip}"
-  description = "The external IP address of the GCE instance."
-}
+# output "instance_external_ip" {
+#   value       = "http://${google_compute_instance.sample-vm.network_interface[0].access_config[0].nat_ip}"
+#   description = "The external IP address of the GCE instance."
+# }
 
 output "instance_external_ips" {
   value = {
@@ -14,8 +14,7 @@ output "instance_external_ips" {
 }
 
 
-
-
+# ALB Frontend Static IP
 output "lb_static_ip_address" {
   description = "The static IP address of the load balancer."
   value       = "http://${google_compute_address.lb.address}"
