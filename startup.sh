@@ -18,6 +18,7 @@ zone=$(curl -H "${METADATA_FLAVOR_HEADER}" -s "${METADATA_URL}/instance/zone")
 project_id=$(curl -H "${METADATA_FLAVOR_HEADER}" -s "${METADATA_URL}/project/project-id")
 network_tags=$(curl -H "${METADATA_FLAVOR_HEADER}" -s "${METADATA_URL}/instance/tags")
 
+
 # Create a simple HTML page and include instance details
 cat <<EOF > /var/www/html/index.html
 <html><body>

@@ -5,7 +5,7 @@ terraform {
     prefix      = "terraform/052025-mig-alb-private"
     credentials = "key.json"
   }
-  
+
   required_providers {
     google = {
       source  = "hashicorp/google"
