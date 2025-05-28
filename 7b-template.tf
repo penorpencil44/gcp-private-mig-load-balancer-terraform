@@ -5,6 +5,7 @@ resource "google_compute_region_instance_template" "app" {
   name         = "app-template-terraform"
   description  = "This template is used to clone lizzo"
   machine_type = "e2-medium"
+  region       = "<FILL THIS IN>"
 
   # Create a new disk from an image and set as boot disk
   disk {
